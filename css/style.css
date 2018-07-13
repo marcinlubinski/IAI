@@ -1,0 +1,88 @@
+/* 1. <header> - container - Marcin
+   2. <nav> - contanier - Karolina
+   3. slider - container-fluid - Piotr
+   4. polecane - container - Adrian
+   5. produkty - container - Karolina
+   6. firmy - container - Marta
+   7. o-nas - container - Marta (Piotr)
+   8. newsletter - container - Adrian
+   9. footer - container > container-fluid - Marta
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background: #fff;
+    color: #222;
+}
+.container {
+    /* width: 100%; */
+    margin: 0 auto;
+    width: 1170px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+}
+.container-fluid {
+    width: 100%;
+
+}
+.row {
+    margin-left: -17px;
+    margin-right: -17px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row-no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row-no-gutters [class*="col-"]  {
+    padding-right: 0;
+    padding-left: 0; 
+}
+
+[class*="col-"] {
+    float: left;
+    padding-right: 17px;
+    padding-left: 17px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* ----- */
+/* style Nasze */
+/* ----- */
+
+/* ----- */
+/* Marcin  */
+
+/* Karolina */
+
+/* Piotr */
+
+/* Adrian */
+
+/* Marta */
+
+
+
