@@ -6,41 +6,374 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zadanie IAI</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 <body>
     <!-- Header Marcin -->
     <div id="header" class="container">
-        <div class="row">
-            <div class="col-4">test</div>
-            <div class="col-4">tes1t</div>
-            <div class="col-4">tes1t</div>
+        <div class="row header-top">
+            <div class="col-3"><i class="fas fa-envelope"></i>E-mail<a href="mailto:kontakt@trangoworld.pl">kontakt@trangoworld.pl</a></div>
+            <div class="col-7"><i class="fas fa-phone"></i>Infolinia<a href="tel:+48 95 759 89 43">+48 95 759 89 43</a></div>
+            <div class="col-2 right" >Wybierz język: <img src="img/poland.png" class="lang"alt=""></div>
         </div>
+    </div>
+    <div id="header-logo" class="container-fluid">
+        <div class="container">
+            <div class="row header-bottom">
+                <div class="col-3 padding">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="col-5 padding">
+                    <form action="" >
+                        <input class="input-1" class="sfield" type="text" name="searchterm" placeholder="Wpisz szukaną frazę?">
+                        <button class="button-submit" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-4 icons">
+                    <div class="float-left"><a href="#"><i class="fas fa-user"></i><p>Konto</p></a></div>
+                    <div class="float-left"><a href="#"><i class="fas fa-heart"></i><p>Ulubione</p></a></div>
+                    <div class="float-left"><a href="#" class="icon-bag"><i class="fas fa-shopping-cart"></i><p>244,99 zł</p><span class="cart">3</span></a></div>
+                </div>
+            </div>
+        </div>    
     </div>
 
     <!-- nawigacja Karolina -->
     <div id="nav" class="container">
-        <div class="row">
-            <div class="col-12">nawigacja</div>
+        <div class="row row-no-gutters">
+            <div class="col-12">
+                <ul>
+                <li>
+                    <a href="/" title="Męskie">Męskie</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Palety cieni</a></li>
+                                <li>
+                                <a href="/" target="_self">Cienie do powiek <i class="fas fa-angle-right"></i></a>
+                                <ul>
+                                    <li><a href="/" target="_self">Sypkie</a></li>
+                                    <li><a href="/" target="_self">W kamieniu</a></li>
+                                    <li><a href="/" target="_self">W kremie</a></li>
+                                    <li><a href="/" target="_self">W musie</a></li>
+                                    <li><a href="/" target="_self">W płynie</a></li>
+                                    <li><a href="/" target="_self">W kredce</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="/" target="_self">Cienie w kremie</a></li>
+                                <li><a href="/" target="_self">Eyelinery</a></li>
+                                <li><a href="/" target="_self">Kredki do oczu</a></li>
+                                <li><a href="/" target="_self">Tusze do rzęs</a></li>
+                                <li><a href="/" target="_self">Brwi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Kredki i flamastry</a></li>
+                                <li><a href="/" target="_self">Pomady, pudry i żele</a></li>
+                                <li><a href="/" target="_self">Zestawy i palety</a></li>
+                                <li><a href="/" target="_self">Szablony i nożyki</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="/" title="Damskie">Damskie</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Pomadki</a></li>
+                                <li><a href="/" target="_self">Matowe pomadki</a></li>
+                                <li><a href="/" target="_self">Konturówki</a></li>
+                                <li><a href="/" target="_self">Błyszczyki</a></li>
+                                <li><a href="/" target="_self">Balsamy</a></li>
+                                <li><a href="/" target="_self">Farbki</a></li>
+                                <li><a href="/" target="_self">Peelingi</a></li>
+    
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    
+    
+                <li>
+                    <a href="/" title="Dziecięce">Dziecięce</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Bazy</a></li>
+                                <li><a href="/" target="_self">Bronzery</a></li>
+                                <li><a href="/" target="_self">Korektory</a></li>
+                                <li><a href="/" target="_self">Podkłady</a></li>
+                                <li><a href="/" target="_self">Pudry</a></li>
+                                <li><a href="/" target="_self">Róże</a></li>
+                                <li><a href="/" target="_self">Rozświetlacze</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Podkłady i bazy</a></li>
+                                <li><a href="/" target="_self">Pudry</a></li>
+                                <li><a href="/" target="_self">Korektory</a></li>
+                                <li><a href="/" target="_self">Róże</a></li>
+                                <li><a href="/" target="_self">Kredki</a></li>
+                                <li><a href="/" target="_self">Pędzle</a></li>
+                                <li><a href="/" target="_self">Akcesoria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="/" title="Buty">Buty</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Palety i zestawy</a></li>
+                                <li><a href="/" target="_self">Kosmetyki naturalne</a></li>
+                                <li><a href="/" target="_self">Farbki do ciała</a></li>
+                                <li><a href="/" target="_self">Toniki</a></li>
+                                <li><a href="/" target="_self">Serum</a></li>
+                                <li><a href="/" target="_self">Maski</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Demakijaż i oczyszczanie</a></li>
+                                <li><a href="/" target="_self">Peelngi</a></li>
+                                <li><a href="/" target="_self">Toniki</a></li>
+                                <li><a href="/" target="_self">Esencje</a></li>
+                                <li><a href="/" target="_self">Serum</a></li>
+                                <li><a href="/" target="_self">Maski i maski w płacie</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/" title="Plecaki">Plecaki</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Włosy suche i zniszczone</a></li>
+                                <li><a href="/" target="_self">Włosy tłuste i mieszane</a></li>
+                                <li><a href="/" target="_self">Włosy normalne</a></li>
+                                <li><a href="/" target="_self">Włosy kręcone</a></li>
+                                <li><a href="/" target="_self">Włosy farbowane</a></li>
+                                <li><a href="/" target="_self">Szampony przeciwłupieżowe</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Włosy suche i zniszczone</a></li>
+                                <li><a href="/" target="_self">Włosy tłuste i mieszane</a></li>
+                                <li><a href="/" target="_self">Włosy normalne</a></li>
+                                <li><a href="/" target="_self">Włosy kręcone</a></li>
+                                <li><a href="/" target="_self">Włosy farbowane</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/" title="Namioty">Namioty</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Zestawy pędzli</a></li>
+                                <li><a href="/" target="_self">Pędzle do makijażu twarzy</a></li>
+                                <li><a href="/" target="_self">Pędzle do oczu i brwi</a></li>
+                                <li><a href="/" target="_self">Pędzle do makijazu ust</a></li>
+                                <li><a href="/" target="_self">Pędzle do masek i kremów</a></li>
+                                <li><a href="/" target="_self">Pędzle owalne</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Pędzle do makijażu twarzy</a></li>
+                                <li><a href="/" target="_self">Pędzle do makijażu oczu</a></li>
+                                <li><a href="/" target="_self">Zestawy</a></li>
+                                <li><a href="/" target="_self">Akcesoria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/" title="Maty materace">Maty<br/>materace</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Hi hybrid</a></li>
+                                <li><a href="/" target="_self">Makear</a></li>
+                                <li><a href="/" target="_self">MylaQ</a></li>
+                                <li><a href="/" target="_self">Neonail</a></li>
+                                <li><a href="/" target="_self">Topy i bazy</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Pilniki</a></li>
+                                <li><a href="/" target="_self">Bloki polerskie</a></li>
+                                <li><a href="/" target="_self">Kopytka, radełka i cążki</a></li>
+                                <li><a href="/" target="_self">Formy do paznokci</a></li>
+                                <li><a href="/" target="_self">Waciki</a></li>
+                                <li><a href="/" target="_self">Pędzle do zdobień i sondy</a></li>
+                                <li><a href="/" target="_self">Usuwanie manicure hybrydowego</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/" title="Akcesoria">Akcesoria</a>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Kosmetyki do kąpieli</a></li>
+                                <li><a href="/" target="_self">Świece zapachowe</a></li>
+                                <li><a href="/" target="_self">Kominki</a></li>
+                                <li><a href="/" target="_self">Zestawy</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="/" target="_self">Środki czystości</a></li>
+                                <li><a href="/" target="_self">Odświeżacze powietrza</a></li>
+                                <li><a href="/" target="_self">Herbaty</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
         </div>
-    </div>
+     </div>
+
+
 
     <!-- slider Piotr -->
     <div id="slider" class="container-fluid">
-        <div class="row row-no-gutters">
-            <div class="container">
-                <div class="col-12">slider</div>
+        <div class="main_slider">
+            <div>
+                <img src="img/banner1.png" alt="banner">
+                <a href="/">
+                    <button class="container main_slider_button">
+                        zobacz więcej 1
+                    </button>
+                </a>
+            </div>
+            <div>
+                <img src="img/banner1.png" alt="banner">
+                <a href="/">
+                    <button class="container main_slider_button">
+                        zobacz więcej 2
+                    </button>
+                </a>
+            </div>
+            <div>
+                <img src="img/banner1.png" alt="banner">
+                <a href="/">
+                    <button class="container main_slider_button">
+                        zobacz więcej 3
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 
+         <!-- line -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div> -->
     <!-- Polecane Adrian -->
     <div id="recommend" class="container">
         <div class="row">
-            <div class="col-12">polecane</div>
+            <div class="col-12">Polecane
+                <a class="checkout" href="#">zobacz wszystko ></a>
+            </div>
+            <div class="product col-3">
+                <a class="product-card" href="#" title="prod1">
+                <div class="img-height">
+                <img class="product-img" src="img/product1.png" alt="">
+                </div>
+                <h4>kurtka zimowa campus</h4>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                    <span>XXXL</span>
+                </div>
+                <p>797,00 zł</p>
+                <button type="submit">do koszyka</button>
+                </a>
+            </div>
+
+            <div class="product col-3">
+                <a class="product-card" href="#" title="prod2">
+                <div class="img-height">
+                    <img class="product-img" src="img/product2.png" alt="">
+                </div>
+                <h4>kurtka zimowa campus</h4>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                    <span>XXXL</span>
+                </div>
+                <p>597,00 zł</p>
+                <button type="submit">do koszyka</button>
+                </a>
+            </div>
+
+            <div class="product col-3">
+                <a class="product-card" href="#" title="prod3">
+                <div class="img-height">
+                    <img class="product-img" src="img/product3.png" alt="">
+                </div>
+                <h4>plecak sportowy campus</h4>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                    <span>XXXL</span>
+                </div>
+                <p>435,00 zł</p>
+                <button type="submit">do koszyka</button>
+                </a>
+            </div>
+
+            <div class="product col-3">
+                <a class="product-card" href="#" title="prod4">
+                <div class="img-height">
+                    <img class="product-img" src="img/product4.png" alt="">
+                </div>
+                <h4>but górski campus</h4>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                    <span>XXXL</span>
+                </div>
+                <p>197,00 zł</p>
+                <button type="submit">do koszyka</button>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -54,16 +387,81 @@
     <!-- Firmy Marta -->
     <div id="company" class="container">
         <div class="row">
-            <div class="col-12">firmy</div>
+            <div class="col-12">
+    
+                <ul class="slider_producers">
+                            <li>
+                                <a href="/" title="producer1">
+                                    <img src="img/producer1.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer2">
+                                    <img src="img/producer2.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer3">
+                                    <img src="img/producer3.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer4">
+                                    <img src="img/producer4.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer5">
+                                    <img src="img/producer5.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer1">
+                                    <img src="img/producer1.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer2">
+                                    <img src="img/producer2.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer3">
+                                    <img src="img/producer3.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer4">
+                                    <img src="img/producer4.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" title="producer5">
+                                    <img src="img/producer5.png" alt="" />
+                                </a>
+                            </li>
+    
+                        </ul>  
+    
+    
+            </div>
         </div>
     </div>
 
-    <!-- O-nas Marta(Piotr) -->
+    <!-- O-nas Marta -->
     <div id="about" class="container">
-        <div class="row">
-            <div class="col-12">O nas</div>
+            <div class="row">
+                <div class="col-4">
+                    <!-- <img src="img/o-nas.png" alt="" /> -->
+                    <img src="img/o_nas-s.png">
+                </div>
+                <div class="col-8">
+                    <h3> <span>POZNAJ NAS </span> BLIŻEJ</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <strong>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</strong> sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                   
+                </div>
+            </div>
         </div>
-    </div>
 
     <!-- Newsletter Adrian (Marcin) -->
     <div id="newsletter" class="container">
@@ -76,7 +474,39 @@
     <div id="footer" class="container-fluid">
         <div class="row row-no-gutters">
             <div class="container">
-                <div class="col-12">Stopka</div>
+                <div class="col-3">
+                    <h3>Informacje</h3>
+                    <ul>
+                        <li>Informacje o sklepie</li>
+                        <li>Wysyłka</li>
+                        <li>Regulamin</li>
+                        <li>Polityka Prywatności</li>
+                        <li>Odstąpienie od umowy</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Pomoc</h3>
+                    <ul>
+                        <li>Mapa strony</li>
+                        <li>Wyszukiwarka</li>
+                        <li>Sprawdź status zamówienia</li>
+                        <li>Odstąpienie od umowy</li>
+                        <li>Nowości</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Moje konto</h3>
+                    <ul>
+                        <li>Zarejestruj się</li>
+                        <li>Moje zamówienia</li>
+                        <li>Koszyk</li>
+                        <li>Ulubione</li>
+                        <li>Historia transakcji</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    brak
+                </div>
             </div>
         </div>
     </div>
