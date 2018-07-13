@@ -26,7 +26,6 @@ $(document).ready(function() {
 /* Adrian */
 
 /* Marta */
-
 $(function () {
     $('.slider_producers').slick({
         infinite: true,
@@ -49,7 +48,42 @@ $(function () {
     });
 });
 
- 
-$(function () {
-   
+
+$('#newsletter form > div > button').on('click', function(event) {
+  var emailReg = /\S+@\S+\.\S+/;
+
+  var emailVal = $('input[type="email"]').val();
+  var nameVal = $('input[type="name"]').val();
+
+  if (emailVal == "") {
+    event.preventDefault();
+    $('input[type="email"]').after('<span class="error">Wprowadź adres e-mail!</span>');
+
+    setTimeout(function(){
+      $('input[type="email"] + span.error').fadeOut(500, function() {
+        $(this).remove();
+      });
+    }, 3000);
+  }
+  else if (!emailReg.test(emailReg)) {
+    event.preventDefault();
+    $('input[type="email"]').after('<span class="error">Niepoprawny format adresu e-mail!</span>');
+
+    setTimeout(function(){
+      $('input[type="email"] + span.error').fadeOut(500, function() {
+        $(this).remove();
+      });
+    }, 3000);
+  }
+
+  if (nameVal == "") {
+    event.preventDefault();
+    $('#newsletter-name').after('<span class="error">Wprowadź imię!</span>');
+
+    setTimeout(function(){
+      $('#newsletter-name + span.error').fadeOut(500, function() {
+        $(this).remove();
+      });
+    }, 3000);
+  }
 });
