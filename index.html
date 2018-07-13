@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
     <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 <body>
@@ -27,7 +28,7 @@
         <div class="container">
             <div class="row header-bottom">
                 <div class="col-3 padding">
-                    <img src="img/logo.png" alt="">
+                    <a href="/"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="col-5 padding">
                     <form action="" >
@@ -285,19 +286,19 @@
         </div>
     </div>
 
-         <!-- line -->
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Polecane Adrian -->
+<!-- Polecane Adrian -->
     <div id="recommend" class="container">
         <div class="row">
-            <div class="col-12">Polecane
+            <div class="col-12 recommend-title">Polecane
                 <a class="checkout" href="#">zobacz wszystko ></a>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
             <div class="product col-3">
                 <a class="product-card" href="#" title="prod1">
@@ -380,7 +381,81 @@
     <!--Produkt Karolina -->
     <div id="product" class="container">
         <div class="row">
-            <div class="col-12">Produkt</div>
+            <div class="product product-black col-6">
+                <a href="#">
+                <span class="product-bg">
+                    <img src="img/big_banner.png" alt="Wyposażenie wspinaczkowe"/>
+                </span>
+                <span class="product-content-outer">
+                    <span class="product-content-inner">
+                    <strong>Wyposażenie<br/>wspinaczkowe</strong>
+                    <button class="product-button product-button-orange">Zobacz więcej</button>
+                    </span>
+                </span>
+                </a>
+            </div>
+            <div class="product product-white col-3">
+                <a href="#">
+                <span class="product-bg">
+                    <img src="img/banner5_small.png" alt="Wyprzedaż produktów"/>
+                </span>
+                <span class="product-content-outer">
+                    <span class="product-content-inner">
+                    <strong>Wyprzedaż produktów</strong>
+                    <button class="product-button product-button-white">Zobacz więcej</button>
+                    </span>
+                </span>
+                </a>
+            </div>
+            <div class="product product-black col-3">
+                <a href="#">
+                <span class="product-bg">
+                    <img src="img/background_banner.png" alt="bg"/>
+                </span>
+                <span class="product-layer-outer">
+                    <span class="product-layer-inner">
+                    <img class="product-overlay" src="img/banner2_small.png" alt="Kurtka damska Schoppel"/>
+                    </span>
+                </span>
+                <span class="product-content-outer">
+                    <span class="product-content-inner">
+                    <strong class="text-shadow">Kurtka damska Schoppel</strong>
+                    <button class="product-price product-button product-button-white-full">428,99 zł</button>
+                    </span>
+                </span>
+                </a>
+            </div>
+            <div class="product product-black col-3">
+                <a href="#">
+                <span class="product-bg">
+                    <img src="img/background_banner.png" alt="bg"/>
+                </span>
+                <span class="product-layer-outer">
+                    <span class="product-layer-inner">
+                    <img class="product-overlay" src="img/banner3_small.png" alt="Kurtka męska Schoppel"/>
+                    </span>
+                </span>
+                <span class="product-content-outer">
+                    <span class="product-content-inner">
+                    <strong class="text-shadow">Kurtka męska Schoppel</strong>
+                    <button class="product-price product-button product-button-white-full">378,99 zł</button>
+                    </span>
+                </span>
+                </a>
+            </div>
+            <div class="product product-white col-3">
+                <a href="#">
+                <span class="product-bg">
+                    <img class="product-img" src="img/banner4.png" alt="Produkty promocyjne"/>
+                </span>
+                <span class="product-content-outer">
+                    <span class="product-content-inner">
+                    <strong>Produkty<br/>promocyjne</strong>
+                    <button class="product-button product-button-orange">Zobacz więcej</button>
+                    </span>
+                </span>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -477,37 +552,52 @@
                 <div class="col-3">
                     <h3>Informacje</h3>
                     <ul>
-                        <li>Informacje o sklepie</li>
-                        <li>Wysyłka</li>
-                        <li>Regulamin</li>
-                        <li>Polityka Prywatności</li>
-                        <li>Odstąpienie od umowy</li>
+                        <li><a href="/">Informacje o sklepie</a></li>
+                        <li><a href="/">Wysyłka</a></li>
+                        <li><a href="/">Regulamin</a></li>
+                        <li><a href="/">Polityka Prywatności</a></li>
+                        <li><a href="/">Odstąpienie od umowy</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <h3>Pomoc</h3>
                     <ul>
-                        <li>Mapa strony</li>
-                        <li>Wyszukiwarka</li>
-                        <li>Sprawdź status zamówienia</li>
-                        <li>Odstąpienie od umowy</li>
-                        <li>Nowości</li>
+                        <li><a href="/">Mapa strony</a></li>
+                        <li><a href="/">Wyszukiwarka</a></li>
+                        <li><a href="/">Sprawdź status zamówienia</a></li>
+                        <li><a href="/">Odstąpienie od umowy</a></li>
+                        <li><a href="/">Nowości</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <h3>Moje konto</h3>
                     <ul>
-                        <li>Zarejestruj się</li>
-                        <li>Moje zamówienia</li>
-                        <li>Koszyk</li>
-                        <li>Ulubione</li>
-                        <li>Historia transakcji</li>
+                        <li><a href="/">Zarejestruj się</a></li>
+                        <li><a href="/">Moje zamówienia</a></li>
+                        <li><a href="/">Koszyk</a></li>
+                        <li><a href="/">Ulubione</a></li>
+                        <li><a href="/">Historia transakcji</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
-                    brak
+                    <div class="last">
+                        <img src="img/border.png" alt="">
+                        <span><i class="fas fa-phone"></i></span>
+                        <h3>Czy potrzebujesz pomocy?</h3>
+                        <a href="tel:0048660555222">+48 <strong>660 555 222</strong></a>
+                        <a href="tel:0048660555222">+48 <strong>512 333 872</strong></a>
+                        <a href="mailto:kontakt@trangoworld.pl">kontakt@rtangoworld.pl</a>
+                    </div>
+                    <div class="last-social">
+                        <span>Znajdziesz nas na</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="row row-no-gutters">
         </div>
     </div>
 
