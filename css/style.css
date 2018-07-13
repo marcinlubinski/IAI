@@ -71,8 +71,8 @@ body{
 
 /* linia pozioma */
 .line {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #cacaca;
     position: relative;
   }
@@ -878,14 +878,14 @@ body{
   }
 
   /* linia pozioma */
-  .line {
+  #recommend  .line {
       padding-bottom: 30px;
       margin-bottom: 30px;
       border-bottom: 1px solid #cacaca;
       position: relative;
     }
 
-    .line:after {
+    #recommend  .line:after {
       content: '';
       width: 21px;
       height: 14px;
@@ -897,6 +897,13 @@ body{
     }
 
 /* Marta */
+
+#company {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Marta Jej */
 #about strong {
     font-weight: 800;
   }
@@ -920,6 +927,69 @@ body{
     color: #ea7d3c;
    
   }
+  
+  #newsletter form {
+    background: url(../img/newsletter_bg.png) ;
+    background-position: center;
+     background-size: 150%;
+     height: 113px;
+     /*background-attachment: fixed; */ 
+     overflow: hidden; 
+     padding: 15px;
+    }
+ #newsletter form > div {
+    width: 25%;
+     display: block;
+     float: left;
+     text-align: center;
+     position: relative;
+  }
+ #newsletter form > div > input {
+    width: 70%;
+     height: 40px;
+     margin: 30px 10px ;
+     font-weight: 600;
+     padding: 15px;
+     /*border-color: #ea7d3c;
+     background-color: #ea7d3c; */
+   }
+    
+
+
+#newsletter form > div > button {
+    width: 60%;
+     height: 40px;
+     margin: 30px 15px;
+     /*font-weight: 600; */
+     color: white;
+     border-color: #ea7d3c; 
+     background-color: #ea7d3c;
+
+}
+
+
+
+ #newsletter form > div > span {
+    font-size: 2.0em;
+     text-transform: uppercase;
+     line-height: 50px;
+     color: black;
+     font-weight: 800;
+
+}
+ 
+
+
+#newsletter .newsletter_label {
+    /*background-color: #333;*/
+    margin-left: -20px;
+    height: 50px;
+    margin-top: 20px;
+    color: #000000 ;
+    font-weight: 700;
+    font-size: 1.4em;
+    /*text-transform: uppercase;*/
+}
 
 
 
